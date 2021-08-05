@@ -1,0 +1,7 @@
+*.o
+*.elf
+*.img
+mnt
+hankaku.bin
+compile_flag.txt
+tools/
