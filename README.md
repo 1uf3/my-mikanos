@@ -4,7 +4,7 @@
 Vagrant + Virtualboxを用いて環境構築を行います。  
   
 VirtualboxとVagrantをインストールし、`vagrant box add ubuntu/bionic64`を行い、  
-構築したいディレクトリ内で`curl https://raw.githubusercontent.com/lufeee/my-mikanos/master/Vagrantfile > Vagrant`を実行します。  
+構築したいディレクトリ内で`curl https://raw.githubusercontent.com/lufeee/my-mikanos/master/Vagrantfile > Vagrantfile`を実行します。  
 そのディレクトリの中で`vagrant up`を実行する。その後、コマンドが終了したら`vagrant reload`を行うことで環境が作成できます。  
   
 VirtualBoxでGUIからログインする。  
