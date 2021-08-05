@@ -3,7 +3,7 @@
 ## 環境構築
 Vagrant + Virtualboxを用いて環境構築を行います。  
   
-VirtualboxとVagrantをインストールし、特定のファイルを用いて`curl https://raw.githubusercontent.com/lufeee/my-mikanos/master/Vagrantfile > Vagrant`を実行します。  
+VirtualboxとVagrantをインストールし、構築したいファイル内で`curl https://raw.githubusercontent.com/lufeee/my-mikanos/master/Vagrantfile > Vagrant`を実行します。  
 そのファイルの中で`vagrant up`を実行する。その後、コマンドが終了したら`vagrant reload`を行うことで環境が作成できます。  
   
 VirtualBoxでGUIからログインする。  
