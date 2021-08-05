@@ -1,6 +1,6 @@
 # my-mikanos
 
-# 環境構築
+## 環境構築
 Vagrant + Virtualboxを用いて環境構築を行います。  
   
 VirtualboxとVagrantをインストールし、特定のファイルを用いて`curl https://raw.githubusercontent.com/lufeee/my-mikanos/master/Vagrantfile > Vagrant`を実行します。  
