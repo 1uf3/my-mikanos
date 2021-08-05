@@ -18,7 +18,7 @@ Username: vagrant, Password: vagrant
 | TARGET_ARCH     | X64                               |
 | TOOL_CHAIN_TAG  | CLANG38                           |
   
-その後、`$HOME/edk2`内で`build`コマンドを実行してブートローダーをビルドしてください。
-次に、`$HOME/mikanos/kernel`内で`make`コマンドを実行してください。
+その後、`$HOME/edk2`内で`build`コマンドを実行してブートローダーをビルドしてください。  
+次に、`$HOME/mikanos/kernel`内で`make`コマンドを実行してください。  
 最後に以下のコマンドを用いてqemuを起動すればOSを起動できます。  
-`$HOME/osbook/devenv/run_qemu.sh $HOME/edk2/Buiid/MikanLoaderX64/DEBUG_CLANG38/X64/Loader.efi $HOME/mikanos/kernel/kernel.elf`  
+`$HOME/osbook/devenv/run_qemu.sh $HOME/edk2/Buiid/MikanLoaderX64/DEBUG_CLANG38/X64/Loader.efi $HOME/mikanos/kernel/kernel.elf`    
