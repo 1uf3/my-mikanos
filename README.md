@@ -9,16 +9,5 @@ VirtualboxとVagrantをインストールし、構築したいディレクトリ
 VirtualBoxでGUIからログインする。  
 Username: vagrant, Password: vagrant  
 
-`$HOME/edk2/Conf/target.txt`の中身を以下のように変更してください。  
-  
-| 設定項目        | 設定値                            |
-|-----------------|-----------------------------------|
-| ACTIVE_PLATFORM | MikanLoaderPkg/MikanLoaderPkg.dsc |
-| TARGET          | DEBUG                             |
-| TARGET_ARCH     | X64                               |
-| TOOL_CHAIN_TAG  | CLANG38                           |
-  
-その後、`$HOME/edk2`ディレクトリ内で`build`コマンドを実行してブートローダーをビルドしてください。  
-次に、`$HOME/mikanos/kernel`ディレクトリ内で`make`コマンドを実行してください。  
-最後に以下のコマンドを用いてqemuを起動すればOSを起動できます。  
+内部ターミナルで以下のコマンドを用いてqemuを起動すればOSを起動できます。  
 `$HOME/osbook/devenv/run_qemu.sh $HOME/edk2/Buiid/MikanLoaderX64/DEBUG_CLANG38/X64/Loader.efi $HOME/mikanos/kernel/kernel.elf`    
