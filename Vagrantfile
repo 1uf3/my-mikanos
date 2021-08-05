@@ -34,9 +34,14 @@ if [ ! -e MikanLoaderPkg ]; then
 fi
 chown -R vagrant:vagrant $HOME/edk2 $HOME/mikanos $HOME/osbook
 
+curl https://raw.githubusercontent.com/lufeee/my-mikanos/master/target.txt > $HOME/edk2/Conf/target.txt
 source $HOME/.profile
-source $HOME/edk2/edksetup.sh
+cd $HOME/edk2
+source edksetup.sh
+build
 source $HOME/osbook/devenv/buildenv.sh
+cd $HOME/mikanos/kernel
+make
 
 SHELL
 
